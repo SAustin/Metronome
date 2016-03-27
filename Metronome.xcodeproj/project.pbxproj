@@ -14,6 +14,15 @@
 		E13F86D61CA4DEDF00DD29D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13F86D41CA4DEDF00DD29D7 /* LaunchScreen.storyboard */; };
 		E13F86E11CA4DEDF00DD29D7 /* MetronomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F86E01CA4DEDF00DD29D7 /* MetronomeTests.swift */; };
 		E13F86EC1CA4DEDF00DD29D7 /* MetronomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F86EB1CA4DEDF00DD29D7 /* MetronomeUITests.swift */; };
+		E13F86FF1CA4E12300DD29D7 /* beep-07.wav in Resources */ = {isa = PBXBuildFile; fileRef = E13F86FE1CA4E12300DD29D7 /* beep-07.wav */; };
+		E13F87011CA4E22300DD29D7 /* AudioQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13F87001CA4E22300DD29D7 /* AudioQueue.swift */; };
+		E13F87031CA4E31C00DD29D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13F87021CA4E31C00DD29D7 /* AudioToolbox.framework */; };
+		E13F87051CA4E32100DD29D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13F87041CA4E32100DD29D7 /* CoreAudio.framework */; };
+		E13F87071CA4E7BD00DD29D7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E13F87061CA4E7BD00DD29D7 /* AVFoundation.framework */; };
+		E13F870A1CA4E9F400DD29D7 /* quarterNote.png in Resources */ = {isa = PBXBuildFile; fileRef = E13F87091CA4E9F400DD29D7 /* quarterNote.png */; };
+		E13F870D1CA4EA5900DD29D7 /* eigthNote.png in Resources */ = {isa = PBXBuildFile; fileRef = E13F870B1CA4EA5900DD29D7 /* eigthNote.png */; };
+		E13F870E1CA4EA5900DD29D7 /* tripletNote.png in Resources */ = {isa = PBXBuildFile; fileRef = E13F870C1CA4EA5900DD29D7 /* tripletNote.png */; };
+		E13F87101CA4EA9B00DD29D7 /* sixteenthNote.png in Resources */ = {isa = PBXBuildFile; fileRef = E13F870F1CA4EA9B00DD29D7 /* sixteenthNote.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		E13F86E71CA4DEDF00DD29D7 /* MetronomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetronomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13F86EB1CA4DEDF00DD29D7 /* MetronomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeUITests.swift; sourceTree = "<group>"; };
 		E13F86ED1CA4DEDF00DD29D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E13F86FE1CA4E12300DD29D7 /* beep-07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "beep-07.wav"; sourceTree = "<group>"; };
+		E13F87001CA4E22300DD29D7 /* AudioQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioQueue.swift; sourceTree = "<group>"; };
+		E13F87021CA4E31C00DD29D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E13F87041CA4E32100DD29D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		E13F87061CA4E7BD00DD29D7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E13F87091CA4E9F400DD29D7 /* quarterNote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = quarterNote.png; sourceTree = "<group>"; };
+		E13F870B1CA4EA5900DD29D7 /* eigthNote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eigthNote.png; sourceTree = "<group>"; };
+		E13F870C1CA4EA5900DD29D7 /* tripletNote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tripletNote.png; sourceTree = "<group>"; };
+		E13F870F1CA4EA9B00DD29D7 /* sixteenthNote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sixteenthNote.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13F87071CA4E7BD00DD29D7 /* AVFoundation.framework in Frameworks */,
+				E13F87051CA4E32100DD29D7 /* CoreAudio.framework in Frameworks */,
+				E13F87031CA4E31C00DD29D7 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +98,9 @@
 		E13F86BF1CA4DEDE00DD29D7 = {
 			isa = PBXGroup;
 			children = (
+				E13F87061CA4E7BD00DD29D7 /* AVFoundation.framework */,
+				E13F87041CA4E32100DD29D7 /* CoreAudio.framework */,
+				E13F87021CA4E31C00DD29D7 /* AudioToolbox.framework */,
 				E13F86CA1CA4DEDF00DD29D7 /* Metronome */,
 				E13F86DF1CA4DEDF00DD29D7 /* MetronomeTests */,
 				E13F86EA1CA4DEDF00DD29D7 /* MetronomeUITests */,
@@ -97,12 +121,15 @@
 		E13F86CA1CA4DEDF00DD29D7 /* Metronome */ = {
 			isa = PBXGroup;
 			children = (
+				E13F87081CA4E9EB00DD29D7 /* Images */,
+				E13F86F91CA4E0A800DD29D7 /* Sounds */,
 				E13F86CB1CA4DEDF00DD29D7 /* AppDelegate.swift */,
 				E13F86CD1CA4DEDF00DD29D7 /* ViewController.swift */,
 				E13F86CF1CA4DEDF00DD29D7 /* Main.storyboard */,
 				E13F86D21CA4DEDF00DD29D7 /* Assets.xcassets */,
 				E13F86D41CA4DEDF00DD29D7 /* LaunchScreen.storyboard */,
 				E13F86D71CA4DEDF00DD29D7 /* Info.plist */,
+				E13F87001CA4E22300DD29D7 /* AudioQueue.swift */,
 			);
 			path = Metronome;
 			sourceTree = "<group>";
@@ -123,6 +150,25 @@
 				E13F86ED1CA4DEDF00DD29D7 /* Info.plist */,
 			);
 			path = MetronomeUITests;
+			sourceTree = "<group>";
+		};
+		E13F86F91CA4E0A800DD29D7 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				E13F86FE1CA4E12300DD29D7 /* beep-07.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		E13F87081CA4E9EB00DD29D7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E13F870F1CA4EA9B00DD29D7 /* sixteenthNote.png */,
+				E13F870B1CA4EA5900DD29D7 /* eigthNote.png */,
+				E13F870C1CA4EA5900DD29D7 /* tripletNote.png */,
+				E13F87091CA4E9F400DD29D7 /* quarterNote.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +239,7 @@
 				TargetAttributes = {
 					E13F86C71CA4DEDE00DD29D7 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = YMJJF4LH5P;
 					};
 					E13F86DB1CA4DEDF00DD29D7 = {
 						CreatedOnToolsVersion = 7.3;
@@ -232,6 +279,11 @@
 				E13F86D61CA4DEDF00DD29D7 /* LaunchScreen.storyboard in Resources */,
 				E13F86D31CA4DEDF00DD29D7 /* Assets.xcassets in Resources */,
 				E13F86D11CA4DEDF00DD29D7 /* Main.storyboard in Resources */,
+				E13F870D1CA4EA5900DD29D7 /* eigthNote.png in Resources */,
+				E13F86FF1CA4E12300DD29D7 /* beep-07.wav in Resources */,
+				E13F870E1CA4EA5900DD29D7 /* tripletNote.png in Resources */,
+				E13F87101CA4EA9B00DD29D7 /* sixteenthNote.png in Resources */,
+				E13F870A1CA4E9F400DD29D7 /* quarterNote.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E13F86CE1CA4DEDF00DD29D7 /* ViewController.swift in Sources */,
+				E13F87011CA4E22300DD29D7 /* AudioQueue.swift in Sources */,
 				E13F86CC1CA4DEDF00DD29D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +454,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Metronome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.europa.Metronome;
@@ -412,6 +466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Metronome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.europa.Metronome;
